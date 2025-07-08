@@ -1,71 +1,137 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English for All</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Cairo', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      background: #f9f9f9;
       color: #333;
     }
+
     header {
-      background-image: url('https://images.unsplash.com/photo-1581093588401-234e7f1a5e1d'); /* صورة غلاف */
+      background-image: url('https://i.imgur.com/vFpj9QK.jpg');
       background-size: cover;
       background-position: center;
       height: 250px;
+      text-align: center;
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
       color: white;
-      text-shadow: 2px 2px 4px #000;
-      animation: fadeIn 2s ease-in-out;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
-    h1 {
-      font-size: 3em;
+
+    nav a:hover {
+      color: #ffd700;
     }
-    .content {
+
+    .section {
       padding: 30px 20px;
       text-align: center;
-      animation: fadeIn 2s ease-in-out;
     }
-    .contact {
-      background-color: #007bff;
+
+    .section h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 15px;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #34495e;
       color: white;
-      padding: 20px;
       text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-    .contact a {
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>English for All</h1>
-  </header>
+<header>
+  <div>مرحبًا بكم في موقع English for All</div>
+</header>
 
-  <div class="content">
-    <h2>مرحبًا بك في موقع تعلم اللغة الإنجليزية</h2>
-    <p>هنا تجد دروسًا مبسطة في القواعد، المحادثة، المفردات، وتمارين تفاعلية لجميع المستويات.</p>
-  </div>
+<nav>
+  <a href="https://01069314777>📱 واتساب</a>
+  <a href="https://facebook.com/yourpage" target="_blank">📘 فيسبوك</a>
+  <a href="https://youtube.com/yourchannel" target="_blank">📺 يوتيوب</a>
+  <a href="tel:0106914777">📞 اتصل بي</a>
+</nav>
 
-  <div class="contact">
-    <h3>📞 تواصل معنا</h3>
-    <p>رقم الهاتف: <a href="tel:01069314777">01069314777</a></p>
-    <p>📧 البريد الإلكتروني: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+<section class="section">
+  <h2>🌟 الأقسام التعليمية</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://i.imgur.com/bG0hRNy.jpg" alt="كلمات">
+      <p>تعلم أهم الكلمات الإنجليزية لجميع المراحل بطريقة مبسطة وسهلة الحفظ.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/Evn7p0O.jpg" alt="قواعد">
+      <p>قواعد اللغة الإنجليزية مشروحة بالعربي مع أمثلة وتمارين لكل درس.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/hIbZs4T.jpg" alt="تمارين">
+      <p>تمارين تفاعلية واختبارات لكل وحدة لمساعدتك على الفهم والتطبيق.</p>
+    </div>
   </div>
+</section>
+
+<footer>
+  جميع الحقوق محفوظة © أحمد فتحي 2025
+</footer>
 
 </body>
 </html>
